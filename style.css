@@ -1,0 +1,32 @@
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width: 200px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:80px;
+    margin:40px 180px;
+}
+.img-2,.img-5{
+    margin-top: 60px;
+}
+.rot{
+    transform: rotate(90deg);
+    text-align:center;
+}
+@media screen and (max-width:576px) {
+    .row{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .text-container{
+        flex-direction: column;
+    }
+    
+}
